@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--
+  Mengatur karakter encoding menjadi UTF-8 untuk mendukung semua karakter internasional.
+  -->
+  <meta charset="UTF-8">
+
+  <!--
+  Mengatur tampilan viewport agar sesuai dengan lebar perangkat pengguna dan memperbaiki skala tampilan
+  (penting untuk responsive web design).
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--
+  Menentukan judul halaman yang akan muncul di tab browser.
+  -->
+  <title>Element Menu</title>
+
+  <!--
+  Menghubungkan file CSS eksternal untuk styling halaman.
+  -->
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+  <!--
+  SECTION 1: Cover
+  Bagian pembuka halaman, menampilkan judul utama dan subjudul dengan gambar besar.
+  -->
+  <section class="section cover">
+    <div>
+      <!-- Judul utama halaman -->
+      <h1 class="cover-title">MENU</h1>
+
+      <!-- Subjudul halaman -->
+      <h6 class="cover-subtitle">OBELIX SEA VIEW</h6>
+    </div>
+
+    <div class="cover-image">
+      <!-- Gambar utama pada cover -->
+      <img src="Gambar/menu-food.png" alt="Menu Food">
+    </div>
+  </section>
+
+  <!--
+  SECTION 2: Menu Makanan
+  Bagian ini menampilkan daftar makanan dan gambar makanan.
+  -->
+  <section class="section menu-section">
+    <div class="menu-container">
+      
+      <!--
+      Bagian Kiri: Teks Daftar Menu Makanan
+      Menampilkan berbagai pilihan salad, sup, dan pasta.
+      -->
+      <div class="menu-text">
+        <h2>SALAD & SOUP</h2>
+
+        <p><strong>Caesar Salad</strong> - 66K<br>
+        Romaine Lettuce, Tomatoes, Cherry Chicken Breast, Beef Salami, Egg, Beef Crouton, Caesar Dressing</p>
+
+        <p><strong>Tropical Salad</strong> - 40K<br>
+        Watermelon, Salad, Spinach, Pineapple, Kiwi, Apple, Balsamic Dressing, Sweet Orange Dressing</p>
+
+        <p><strong>Rujak Buah Bumbu Kacang</strong> - 23K<br>
+        Mango, Guava, Pineapple, Cucumber, Bumbu Kacang, Water Dressing</p>
+
+        <p><strong>Mushroom Soup (Cream Mushroom Soup)</strong> - 46K<br>
+        Mushroom Champignons, Truffle Oil, Cooking Cream, Garlic Bread</p>
+
+        <h3>LES PATES <em>(Penne or Spaghetti)</em></h3>
+
+        <p><strong>Pasta Carbonara</strong> - 65K<br>
+        Creamy Sauce, Beef Salami, Egg Yolk, Parmesan, Garlic Bread</p>
+
+        <p><strong>Pasta Mushroom</strong> - 67K<br>
+        Creamy Sauce, Champignons, Parmesan, Garlic Bread</p>
+
+        <p><strong>Pasta Aglio Olio</strong> - 66K<br>
+        Chicken Breast, Chili Flakes, Parmesan, Garlic Bread</p>
+
+        <p><strong>Pasta Bolognese</strong> - 72K<br>
+        Minced Beef Bolognese, Parmesan, Garlic Bread</p>
+
+        <p><strong>Pasta Al Pesto</strong> - 77K<br>
+        Pesto Sauce, Cherry Tomatoes, Parmesan, Garlic Bread</p>
+
+        <p><strong>Marinara</strong> - 98K<br>
+        Tomato Concasse, Shrimp, Squid, Clam, Dry Herbs, Garlic Bread</p>
+      </div>
+
+      <!--
+      Bagian Kanan: Gambar Menu Makanan
+      Menampilkan foto-foto dari makanan yang tersedia.
+      -->
+      <div class="menu-images">
+        <img src="Gambar/salad.png" style="height: 500px !important;" alt="Caesar Salad">
+        <div class="caption">Caesar Salad</div>
+
+        <img src="Gambar/pasta-carbonara.png" style="height: 450px !important;" alt="Pasta Carbonara">
+        <div class="caption">Pasta Carbonara</div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!--
+  SECTION 3: Menu Minuman
+  Bagian ini menampilkan daftar minuman mocktail coffee dan milkshake dengan gambar.
+  -->
+  <section class="section drinks-section">
+    <div class="drinks-container">
+  
+      <!--
+      Bagian Gambar Minuman
+      Menampilkan beberapa jenis minuman dalam bentuk gambar.
+      -->
+      <div class="drinks-images">
+        <div class="drink-item">
+          <img src="Gambar/cinnamon-coffee.png" alt="Cinnamon Coffee Milk">
+          <div class="caption">Cinnamon Coffee Milk</div>
+        </div>
+
+        <div class="drink-item">
+          <img src="Gambar/pink-blossom.png" alt="Pink Blossom">
+          <div class="caption">Pink Blossom</div>
+        </div>
+
+        <div class="drink-item">
+          <img src="Gambar/summer-berry.png" alt="Summer Berry's">
+          <div class="caption">Summer Berry's</div>
+        </div>
+      </div>
+  
+      <!--
+      Bagian Teks Menu Minuman
+      Menampilkan deskripsi komposisi dan harga dari masing-masing minuman.
+      -->
+      <div class="drinks-menu">
+        
+        <!-- Kolom Menu Coffee Mocktail -->
+        <div class="menu-column">
+          <h2>COFFEE MOCKTAIL</h2>
+
+          <p><strong>Cinnamon Coffee Milk</strong> - 38K<br>
+          Espresso, Cinnamon Syrup, Fresh Milk, Syrup Caramel, Ice Cube</p>
+
+          <p><strong>Pink Blossom</strong> - 40K<br>
+          Espresso, Mint Syrup, Syrup Strawberry, Fresh Milk, Ice Cube</p>
+
+          <p><strong>Summer Berry's</strong> - 40K<br>
+          Espresso, Fresh Milk, Syrup Strawberry, Syrup Caramel, Ice Cube</p>
+        </div>
+  
+        <!-- Kolom Menu Milkshake -->
+        <div class="menu-column">
+          <h2>MILKSHAKE</h2>
+
+          <p><strong>Milkshake Chocolate</strong> - 38K<br>
+          Ice Cream, Chocolate Milk, Simple Syrup, Ice Cube</p>
+
+          <p><strong>Milkshake Strawberry</strong> - 38K<br>
+          Ice Cream, Fresh Milk, Simple Syrup, Vanilla Syrup, Ice Cube</p>
+
+          <p><strong>Milkshake Vanilla</strong> - 38K<br>
+          Ice Cream, Fresh Milk, Simple Syrup, Vanilla Syrup, Ice Cube</p>
+        </div>
+
+      </div>
+  
+    </div>
+  </section>
+  
+</body>
+</html>

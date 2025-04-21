@@ -1,0 +1,328 @@
+/* 
+Reset Basic 
+Menghilangkan margin dan padding default browser serta menggunakan box-sizing border-box 
+agar ukuran elemen lebih mudah dikontrol.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+Body Styling 
+Mengatur warna background, font utama, dan menyembunyikan scroll horizontal 
+untuk membuat tampilan lebih bersih di semua ukuran layar.
+*/
+body {
+    background-color: #000;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* 
+Section 
+Bagian dasar layout setiap section: membuat konten berada di tengah layar 
+secara vertikal dan horizontal serta memastikan padding responsif.
+*/
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* 
+Cover Section 
+Area utama sebagai tampilan awal halaman, dengan latar belakang hitam polos.
+*/
+.cover {
+    background-color: #000;
+}
+
+/* 
+Cover Title 
+Judul besar di section cover, dengan ukuran besar, tebal, dan spasi antar huruf diperlebar.
+*/
+.cover-title {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* 
+Cover Subtitle 
+Subjudul di bawah cover title, lebih kecil dan berbobot normal.
+*/
+.cover-subtitle {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+/* 
+Cover Image 
+Area untuk gambar utama di cover, memenuhi seluruh lebar dan tinggi parent container.
+*/
+.cover-image {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
+
+/* 
+Gambar di Cover 
+Mengatur gambar supaya memenuhi area dengan menjaga proporsi (object-fit: cover).
+*/
+.cover-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* 
+Menu Section 
+Bagian menu dengan background putih dan teks hitam, dengan padding besar untuk kenyamanan baca.
+*/
+.menu-section {
+    background-color: #fff;
+    color: #000;
+    padding: 80px 20px;
+}
+
+/* 
+Menu Container 
+Layout grid untuk membagi teks dan gambar dalam 2 kolom dengan jarak antar kolom.
+*/
+.menu-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* 
+Menu Text 
+Area teks menu diatur rata kiri.
+*/
+.menu-text {
+    text-align: left;
+}
+
+/* 
+Menu Heading 2 
+Judul bagian menu, ukuran sedang besar dan font tebal.
+*/
+.menu-text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* 
+Menu Heading 3 
+Subjudul dalam menu, sedikit lebih kecil dari h2.
+*/
+.menu-text h3 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* 
+Menu Paragraph 
+Paragraf dalam menu, dengan ukuran teks sedang dan warna abu-abu gelap.
+*/
+.menu-text p {
+    font-size: 16px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* 
+Menu Images 
+Container gambar menu, dengan layout kolom fleksibel dan gambar ditengah.
+*/
+.menu-images {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 
+Gambar dalam Menu 
+Gambar diatur responsif, dengan maksimal lebar 400px, border melengkung, dan bayangan.
+*/
+.menu-images img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* 
+Caption 
+Keterangan gambar dengan ukuran kecil dan warna abu-abu.
+*/
+.caption {
+    font-size: 14px;
+    color: #666;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 
+Drinks Section 
+Bagian untuk menu minuman, dengan warna latar putih dan teks hitam.
+*/
+.drinks-section {
+    background-color: #fff;
+    color: #000;
+    padding: 80px 20px;
+}
+
+/* 
+Drinks Container 
+Membungkus seluruh konten minuman dalam kolom terpusat.
+*/
+.drinks-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 
+Drinks Images 
+Menampilkan banyak gambar minuman dalam satu baris yang responsif.
+*/
+.drinks-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+/* 
+Drink Item 
+Setiap item minuman diberi perataan teks di tengah.
+*/
+.drink-item {
+    text-align: center;
+}
+
+/* 
+Gambar dalam Drink Item 
+Gambar minuman dengan border melengkung dan efek bayangan.
+*/
+.drink-item img {
+    width: 220px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* 
+Caption Minuman 
+Keterangan gambar minuman.
+*/
+.caption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* 
+Drinks Menu 
+Layout daftar menu minuman dengan pembagian kolom fleksibel dan jarak antar kolom.
+*/
+.drinks-menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 40px;
+}
+
+/* 
+Menu Column 
+Setiap kolom dalam daftar menu minuman.
+*/
+.menu-column {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* 
+Judul dalam Menu Column 
+Judul kategori menu dalam kolom.
+*/
+.menu-column h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* 
+Deskripsi dalam Menu Column 
+Deskripsi tiap item menu minuman.
+*/
+.menu-column p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* 
+Media Query untuk Tablet (<= 768px)
+Mengubah layout grid menjadi 1 kolom dan menyesuaikan ukuran teks dan gambar.
+*/
+@media (max-width: 768px) {
+    .menu-container {
+      grid-template-columns: 1fr;
+    }
+    .menu-images img,
+    .drink-item img {
+      max-width: 90%;
+    }
+    .cover-title {
+      font-size: 40px;
+    }
+    .cover-subtitle {
+      font-size: 16px;
+    }
+}
+
+/* 
+Media Query untuk Mobile Kecil (<= 480px)
+Mengecilkan ukuran font untuk cover dan teks menu.
+*/
+@media (max-width: 480px) {
+    .cover-title {
+      font-size: 32px;
+    }
+    .cover-subtitle {
+      font-size: 14px;
+    }
+    .menu-text h2, .menu-column h2 {
+      font-size: 22px;
+    }
+    .menu-text p, .menu-column p {
+      font-size: 14px;
+    }
+}
